@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>惠普QQ物联打印机</title>
+    <script src="js/createMetaTag.js"></script>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?57b2db4318fbc71fe2c1defb44fe1d3a";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+<body>
+<div class="loading">
+    <div class="loading-logo"></div>
+    <div class="progress-wrap">
+        <div class="progress-bar" style="display: none">
+            <div class="p-slide" id="load"></div>
+        </div>
+        <p class="progress-num" id="txt">0%</p>
+    </div>
+</div>
+<div class="swiper-container swiper-container-vertical">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide slide-1 swiper-no-swiping bg-load" data-bg="images/n_1_bg_img.png">
+            <div class="move-img move-n1">
+                <img data-src="images/n_1_img_penguin.png" alt="">
+            </div>
+            <a href="javascript:void (0)" class="next-btn no-1">
+                <img data-src="images/n_1_next.png" alt="" width="128">
+            </a>
+            <p class="take-picture"><img data-src="images/n_1_img_text.png" alt=""></p>
+        </div>
+        <div class="swiper-slide slide-2 swiper-no-swiping bg-load" id="flicker" data-bg="images/n_2_bg_img.png">
+            <div class="slide-warp">
+                <div class="move-img move-n2">
+                    <img data-src="images/n_2_img_penguin2.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide slide-3 swiper-no-swiping">
+            <div class="slide-bg move-img">
+                <img data-src="images/n_3_bg_color.png" alt="">
+            </div>
+            <div class="cell-phone move-img move-n3-1">
+                <img data-src="images/n_3_img_phone.png" alt="">
+            </div>
+            <div class="pic move-img move-n3-2">
+                <img data-src="images/n_3_img_pic.png" alt="">
+            </div>
+            <a href="javascript:void (0)" class="print-btn move-img move-n3-3 next-btn" id="print-btn">
+                <img data-src="images/n_3_btn_print.png" alt="">
+                <img data-src="images/img_printbtn_star.png" alt="" class="move-img">
+            </a>
+            <div class="hand move-img move-n3-4">
+                <img data-src="images/n_3_pic_hand.png" alt="">
+            </div>
+        </div>
+        <div class="swiper-slide slide-4">
+            <div class="slide-bg move-img">
+                <img data-src="images/n_4_bg_color.png" alt="">
+            </div>
+            <a href="javascript:void(0)" class="move-img move-n4-0">
+                <img data-src="images/btn_again.png" alt="">
+            </a>
+            <div class="logo move-img move-n4-1 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s">
+                <img data-src="images/n_4_logo.png" alt="">
+            </div>
+            <div class="printer move-img move-n4-2">
+                <img data-src="images/n_4_img_printer.png" alt="">
+            </div>
+            <div class="printer-pic move-img move-n4-3">
+                <img data-src="images/n_4_img_picture.png" alt="">
+            </div>
+            <div class="move-img move-n4-3-2">
+                <img data-src="images/n_4_text2.png" alt="">
+            </div>
+            <div class="move-img move-n4-3-3">
+                <img data-src="images/n_4_text3.png" alt="">
+            </div>
+            <div class="text move-img move-n4-4 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s">
+                <img data-src="images/n_4_text.png" alt="">
+            </div>
+            <div class="note-book move-img move-n4-6">
+                <img data-src="images/n_4_img_notbook.png" alt="">
+            </div>
+            <div class="n4-hand move-img  move-n4-7">
+                <img data-src="images/n_4_img_hand.png" alt="">
+            </div>
+            <a href="javascript:void(0)" class="move-img move-n4-8" id="end-touch">
+                <img data-src="images/n_4_icon_next.png" alt="">
+            </a>
+        </div>
+        <div class="swiper-slide slide-5">
+            <div class="slide-bg move-img">
+                <img data-src="images/n_5_bg.png" alt="">
+            </div>
+            <div class="move-img move-n5-1 ani" swiper-animate-effect="fadeIn">
+                <img data-src="images/n_5_text.png" alt="">
+            </div>
+            <div class="move-img move-n5-2">
+                <img data-src="images/n_5_img_photo.png" alt="">
+            </div>
+            <div class="move-img move-n5-3">
+                <img data-src="images/n_5_img_file.png" alt="">
+            </div>
+            <div class="move-img move-n5-4">
+                <img data-src="images/n_5_img_paper.png" alt="">
+            </div>
+            <div class="move-img move-n5-5">
+                <img data-src="images/n_5_img_phone.png" alt="">
+            </div>
+            <a href="javascript:void(0)" class="move-img move-n4-8">
+                <img data-src="images/n_5_arrow.png" alt="">
+            </a>
+        </div>
+        <div class="swiper-slide slide-9">
+            <div class="slide-bg move-img">
+                <img data-src="images/n_9_bg.png" alt="">
+            </div>
+            <div class="move-img move-n9-1 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s">
+                <img data-src="images/n_9_text.png" alt="" width="632">
+            </div>
+            <div class="move-img move-n9-2">
+                <img data-src="images/n_9_img_hearts.png" alt="">
+            </div>
+            <div class="move-img move-n9-3">
+                <img data-src="images/n_9_img_paper.png" alt="">
+            </div>
+            <div class="move-img move-n9-4">
+                <img data-src="images/n_9_img_girl.png" alt="">
+            </div>
+            <div class="move-img move-n9-5">
+                <img data-src="images/n_9_img_printer.png" alt="">
+            </div>
+            <a href="javascript:void(0)" class="move-img move-n4-8">
+                <img data-src="images/n_5_arrow.png" alt="">
+            </a>
+        </div>
+        <div class="swiper-slide slide-6 bg-load" data-bg="images/n_6_img_bg.png">
+            <div class="move-img move-n6-0">
+                <img data-src="images/img_mum.png" alt="">
+            </div>
+            <div class="move-img move-n6-1 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s">
+                <img data-src="images/n_6_text.png" alt="">
+            </div>
+            <div class="move-img move-n6-2-1">
+                <img data-src="images/n_6_img_printer4.png" alt="">
+            </div>
+            <div class="move-img move-n6-2-2">
+                <img data-src="images/n_6_img_printer3.png" alt="">
+            </div>
+            <div class="move-img move-n6-2-3">
+                <img data-src="images/n_6_img_paper.png" alt="">
+            </div>
+            <div class="move-img move-n6-3">
+                <img data-src="images/n_6_books.png" alt=""><!---->
+            </div>
+            <div class="move-img move-n6-4">
+                <img data-src="images/n_6_men.png" alt="">
+            </div>
+            <div class="move-img move-n6-5">
+                <img data-src="images/n_6_bag.png" alt="">
+            </div>
+            <a href="javascript:void(0)" class="move-img move-n4-8">
+                <img data-src="images/n_5_arrow.png" alt="">
+            </a>
+
+        </div>
+        <div class="swiper-slide slide-7">
+            <div class="slide-bg move-img">
+                <img data-src="images/n_7_bg%202.png" alt="">
+            </div>
+            <div class="move-img move-n7-1"></div>
+            <div class="move-img move-n7-2">
+                <img data-src="images/n_7_img_becket.png" alt="">
+            </div>
+            <div class="move-img move-n7-3">
+                <img data-src="images/n_7_img_becket.png" alt="">
+            </div>
+            <div class="move-img move-n7-4">
+                <img data-src="images/n_7_subway_slow.gif" alt="">
+            </div>
+            <div class="move-img move-n7-5">
+                <img data-src="images/n_7_img_pop.png" alt="">
+            </div>
+            <div class="move-img move-n7-6 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s">
+                <img data-src="images/n_7_text.png" alt="">
+            </div>
+            <a href="javascript:void(0)" class="move-img move-n4-8">
+                <img data-src="images/n_5_arrow.png" alt="">
+            </a>
+        </div>
+        <div class="swiper-slide slide-8">
+            <div class="slide-bg move-img">
+                <img data-src="images/n_8_bg.png" alt="">
+            </div>
+            <div class="move-img move-n8-1 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s">
+                <img data-src="images/n_8_text.png" alt="" width="606">
+            </div>
+            <div class="move-img move-n8-2">
+                <img data-src="images/phone.png" alt="" width="344">
+            </div>
+            <div class="move-img move-n8-3 ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s">
+                <img data-src="images/n_8_img_men_left.png" alt="">
+            </div>
+            <div class="move-img move-n8-4 ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s">
+                <img data-src="images/n_8_img_eskimo.png" alt="">
+            </div>
+            <div class="move-img move-n8-5">
+                <img data-src="images/n_8_img_girl.png" alt="" width="206">
+            </div>
+            <div class="move-img move-n8-6 ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s">
+                <img data-src="images/n_8_img_penguin.png" alt="">
+            </div>
+            <div class="move-img move-n8-7 ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s">
+                <img data-src="images/n_8_img_men_right.png" alt="">
+            </div>
+            <a href="javascript:void(0)" class="move-img move-n4-8">
+                <img data-src="images/n_5_arrow.png" alt="">
+            </a>
+        </div>
+        <div class="swiper-slide slide-12 bg-load" data-bg="images/n_12_bg.png">
+            <div class="move-img move-n12-1">
+                <img data-src="images/n_12_img_coffee.png" alt="">
+            </div>
+            <div class="move-img move-n12-2">
+                <img data-src="images/n_12_img_phone.png" alt="">
+            </div>
+            <div class="move-img move-n12-3">
+                <img data-src="images/n_12_img_QQfriend.png" alt="">
+            </div>
+            <div class="move-img move-n12-4">
+                <img data-src="images/n_12_img_hand.png" alt="">
+            </div>
+            <div class="move-img move-n12-5 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s">
+                <img data-src="images/n_12_text.png" alt="">
+            </div>
+            <a href="javascript:void(0)" class="move-img move-n4-8">
+                <img data-src="images/n_5_arrow.png" alt="">
+            </a>
+        </div>
+        <div class="swiper-slide slide-10">
+            <div class="slide-bg move-img">
+                <img data-src="images/n_10_bg.png" alt="">
+            </div>
+
+            <div class="move-img move-n10-1 txt ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.8s">
+                <p>
+                    惠普QQ物联 DeskJet DJ3638<br/>
+                    惠省系列无线一体机
+                </p>
+            </div>
+            <div class="move-img move-n10-2 ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.8s">
+                <img data-src="images/n_10_img_printer1.png" alt="">
+            </div>
+
+            <div class="move-img move-n10-3 txt ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.8s" swiper-animate-delay="2s">
+                <p>惠普QQ物联 OfficeJet Pro 8710<br/>
+                    惠商系列彩色喷墨一体机</p>
+            </div>
+            <div class="move-img move-n10-5 ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.8s" swiper-animate-delay="1.6s">
+                <img data-src="images/n_10_img_printer2.png" alt="">
+            </div>
+
+            <div class="move-img move-n10-4 txt ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.8s" swiper-animate-delay="3.1s">
+                <p>
+                    惠普QQ物联 LaserJet Pro <br/>
+                    M226dw 激光多功能一体机
+                </p>
+            </div>
+            <div class="move-img move-n10-6 ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.8s"  swiper-animate-delay="2.8s">
+                <img data-src="images/n_10_img_printer3.png" alt="">
+            </div>
+            <a href="http://item.m.jd.com/product/1673845.html" data-sequence="1" class="buy-desk ani buy" swiper-animate-effect="fadeIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.8s"></a>
+            <a href="http://item.m.jd.com/product/2927796.html" data-sequence="2" class="buy-office ani buy" swiper-animate-effect="fadeIn" swiper-animate-duration="0.8s" swiper-animate-delay="2s"></a>
+            <a href="http://item.m.jd.com/product/1290462.html?sid=a0886122f1a1465e5f877d32061686db" data-sequence="3" class="buy-laser ani buy" swiper-animate-effect="fadeIn" swiper-animate-duration="0.8s" swiper-animate-delay="3.1s"></a>
+            <a href="javascript:void(0)" class="move-img move-n10-8 share-btn">
+                <img data-src="images/n_10_btn_share.png" alt="">
+            </a>
+            <div class="move-img move-n10-9">
+                <img data-src="images/n_10_img_ice.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-pagination"></div>
+</div>
+<!--    分享
+<div class="share-wrap">
+    <div class="share-text"></div>
+    <div class="share-img">
+        <img src="images/share_img.png" alt="" data-src="images/share_img.png">
+    </div>
+</div>
+-->
+<div class="music">
+    <audio controls="controls" loop="loop" id="loop" >
+        <source src="music/Rhodes207-A.ogg" type="audio/ogg" id="ogg" />
+        <source src="music/Rhodes207-A.mp3" type="audio/mpeg" id="mp3" />
+    </audio>
+    <div class="music-icon" data-default="images/icon_music.png" data-active="images/icon_mute.png"></div>
+</div>
+<script src="js/zepto.min.js"></script>
+<script src="js/swiper-3.3.1.jquery.min.js"></script>
+<script src="js/swiper.animate1.0.2.min.js"></script>
+<script src="js/homeScript.js"></script>
+</body>
+</html>
